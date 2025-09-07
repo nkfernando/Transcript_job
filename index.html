@@ -7,7 +7,7 @@
     <title>EZM Online - පහසුවෙන් මුදල් උපයමු</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@400;700&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1772582721625009"
-     crossorigin="anonymous"></script>
+                                 crossorigin="anonymous"></script>
     <style>
         /* CSS Code */
         :root {
@@ -230,21 +230,17 @@
         section.content-page {
             width: 100%;
             max-width: 900px;
-            display: none;
-            scroll-margin-top: 100px;
-            transition: opacity 0.3s ease-in-out;
+            /* All content is visible by default now */
+            scroll-margin-top: 100px; /* Offset for sticky header */
             padding: 0;
-            margin-bottom: 0;
+            margin-bottom: 20px;
             background-color: transparent;
             border: none;
             box-shadow: none;
             border-radius: 0;
         }
-
-        section.content-page.active {
-            display: block;
-            opacity: 1;
-        }
+        
+        /* The .active class and its related logic are now removed, as all sections are always visible. */
 
         .job-card {
             background-color: var(--card-bg);
@@ -500,17 +496,6 @@
                 font-size: 0.9em;
             }
 
-            ul {
-                padding-left: 15px;
-            }
-
-            li {
-                font-size: 0.9em;
-                margin-bottom: 6px;
-            }
-
-            /* No contact form input/button styles as form removed */
-
             footer {
                 padding: 15px;
                 font-size: 0.8em;
@@ -575,8 +560,6 @@
                 font-size: 0.95em;
             }
 
-            /* No contact form input/button styles as form removed */
-
             /* Show translate button on tablets */
             .translate-button {
                 display: flex;
@@ -611,11 +594,11 @@
             </div>
             <nav id="main-nav">
                 <ul>
-                    <li><a href="#home" data-section="home-section">මුල් පිටුව</a></li>
-                    <li><a href="#about" data-section="about-section">අපි ගැන</a></li>
-                    <li><a href="#privacy" data-section="privacy-section">පුද්ගලිකත්ව ප්‍රතිපත්තිය</a></li>
-                    <li><a href="#disclaimer" data-section="disclaimer-section">වගකීම් ප්‍රකාශය</a></li>
-                    <li><a href="#contact" data-section="contact-section">අප අමතන්න</a></li>
+                    <li><a href="#home-section">මුල් පිටුව</a></li>
+                    <li><a href="#about-section">අපි ගැන</a></li>
+                    <li><a href="#privacy-section">පුද්ගලිකත්ව ප්‍රතිපත්තිය</a></li>
+                    <li><a href="#disclaimer-section">වගකීම් ප්‍රකාශය</a></li>
+                    <li><a href="#contact-section">අප අමතන්න</a></li>
                 </ul>
             </nav>
         </div>
@@ -627,7 +610,7 @@
         </section>
 
         <!-- Home Section: All job opportunities listed as separate cards on this page -->
-        <section id="home-section" class="content-page active">
+        <section id="home-section" class="content-page">
             <h2>මුල් පිටුව: මුදල් උපයන ක්‍රම</h2>
             <p>පහත සඳහන් රැකියා අවස්ථා මගින් ඔබට අන්තර්ජාලය හරහා මුදල් ඉපයීමට හැකි වනු ඇත. කරුණාකර, ලියාපදිංචි වීමට පෙර අදාළ ආයතන වල නීති හා කොන්දේසි හොඳින් කියවා බලන්න。</p>
 
@@ -709,7 +692,7 @@
                     </ul>
                 </div>
             </section>
-                
+
             <section class="job-card">
                 <h2>3. 2Captcha – Captcha Typing Jobs</h2>
                 <p>2Captcha යනු අන්තර්ජාලයේ දිස්වන Captcha රූප හඳුනාගෙන ඒවායේ ඇති අකුරු හෝ ඉලක්කම් ටයිප් කිරීමෙන් මුදල් ඉපයිය හැකි සරල වේදිකාවකි. මෙම රැකියාවට විශේෂ දැනුමක් හෝ කුසලතාවක් අවශ්‍ය නොවන අතර, අන්තර්ජාල සම්බන්ධතාවක් සහ පරිගණකයක් පමණක් ප්‍රමාණවත් වේ. ඔබට වේගවත්ව සහ නිවැරදිව Captcha විසඳිය හැකි නම්, දිනකට යම්කිසි මුදලක් උපයා ගැනීමට මෙය හොඳ ක්‍රමයකි。</p>
@@ -722,23 +705,7 @@
                     </ul>
                 </div>
             </section>
-            <!-- Google AdSense Ad Code -->
-            <div class="adsense-ad-unit">
-                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1772582721625009"
-                      crossorigin="anonymous"></script>
-                <ins class="adsbygoogle"
-                      style="display:block; min-width: 250px;"
-                      data-ad-format="fluid"
-                      data-ad-layout-key="-fb+5w+4e-db+86"
-                      data-ad-client="ca-pub-1772582721625009"
-                      data-ad-slot="4768208926"></ins>
-                <script>
-                      // Delay the push to ensure container has rendered width
-                      setTimeout(() => {
-                          (adsbygoogle = window.adsbygoogle || []).push({});
-                      }, 100); // Small delay
-                </script>
-            </div>
+
             <section class="job-card">
                 <h2>4. තවත් Transcription Jobs</h2>
                 <p>පිටපත් කිරීමේ කටයුතු (Transcription Jobs) සඳහා තවත් අවස්ථා සොයන අයට, Rev සහ TranscribeMe වැනි වේදිකා ඉතා හොඳ විකල්ප වේ. මෙම වෙබ් අඩවි ද ඔබට නිවසේ සිටම පහසුවෙන් වැඩ කිරීමට ඉඩ සලසයි. Rev හිදී ඔබට transcription, captioning, සහ subtitle jobs තෝරා ගත හැකි අතර, TranscribeMe කෙටි ශ්‍රව්‍ය ගොනු සහ ඉහළ ගෙවීම් අනුපාත සඳහා ප්‍රසිද්ධය. විශේෂයෙන්, වෛද්‍ය හෝ නීතිමය පිටපත් කිරීම් සඳහා TranscribeMe හි වැඩි ප්‍රසාද දීමනා (bonus rates) ලැබේ。</p>
@@ -837,8 +804,6 @@
         document.addEventListener('DOMContentLoaded', () => {
             const themeToggle = document.getElementById('theme-toggle');
             const body = document.body;
-            const navLinks = document.querySelectorAll('nav a');
-            const contentSections = document.querySelectorAll('main .content-page');
             const menuToggle = document.getElementById('menu-toggle');
             const mainNav = document.querySelector('nav'); 
             const translateButton = document.getElementById('translate-button');
@@ -861,44 +826,6 @@
                     localStorage.setItem('theme', 'dark');
                 }
             });
-
-            // --- Section Switching Logic ---
-
-            // Function to show a specific section and hide others
-            const showSection = (sectionId) => {
-                contentSections.forEach(section => {
-                    section.classList.remove('active');
-                });
-                const targetSection = document.getElementById(sectionId);
-                if (targetSection) {
-                    targetSection.classList.add('active');
-                    // Scroll to the top of the section, considering sticky header
-                    // Using setTimeout to allow display:block to apply before scrolling
-                    setTimeout(() => {
-                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }, 50);
-                }
-            };
-
-            // Event listener for navigation links
-            navLinks.forEach(link => {
-                link.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetSectionId = this.getAttribute('data-section');
-                    history.pushState(null, '', this.getAttribute('href')); // Update URL hash without reload
-                    showSection(targetSectionId);
-
-                    // Close the mobile menu after clicking a link
-                    if (window.innerWidth <= 768 && mainNav.classList.contains('nav-open')) {
-                        mainNav.classList.remove('nav-open');
-                    }
-                });
-            });
-
-            // Handle initial load based on URL hash or default to home
-            const initialHash = window.location.hash.substring(1);
-            const initialSectionId = initialHash ? `${initialHash}-section` : 'home-section'; // Default to home-section
-            showSection(initialSectionId);
 
             // --- Mobile Menu Toggle Logic ---
             if (menuToggle && mainNav) { // Check if mainNav exists (it should)
@@ -948,5 +875,3 @@
     </script>
 </body>
 </html>
-
-
